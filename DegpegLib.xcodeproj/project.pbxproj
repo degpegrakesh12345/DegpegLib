@@ -16,6 +16,7 @@
 		1828427B27D845C900178C66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1828427927D845C800178C66 /* Main.storyboard */; };
 		1828427D27D845C900178C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1828427C27D845C900178C66 /* Assets.xcassets */; };
 		1828428027D845C900178C66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1828427E27D845C900178C66 /* LaunchScreen.storyboard */; };
+		1828428627D84D8D00178C66 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828428527D84D8D00178C66 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		1828427C27D845C900178C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1828427F27D845C900178C66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1828428127D845C900178C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1828428527D84D8D00178C66 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		1828421827D8422D00178C66 = {
 			isa = PBXGroup;
 			children = (
+				1828428527D84D8D00178C66 /* SwiftyLib.swift */,
 				1828422427D8422D00178C66 /* DegpegLib */,
 				1828422F27D8422D00178C66 /* DegpegLibTests */,
 				1828427227D845C800178C66 /* DegpegLibExamples */,
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					1828422127D8422D00178C66 = {
 						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
 					};
 					1828422A27D8422D00178C66 = {
 						CreatedOnToolsVersion = 11.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1828428627D84D8D00178C66 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		1828423727D8422D00178C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -452,6 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = test.DegpegLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -460,6 +467,7 @@
 		1828423827D8422D00178C66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -483,6 +491,7 @@
 		1828423A27D8422D00178C66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DegpegLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		1828423B27D8422D00178C66 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DegpegLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
