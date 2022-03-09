@@ -1,7 +1,6 @@
 //
 //  DegpegLib.h
 //  DegpegLib
-//
 //  Created by Apple on 3/9/22.
 //  Copyright © 2022 Apple. All rights reserved.
 //
